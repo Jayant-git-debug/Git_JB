@@ -1,0 +1,47 @@
+//Creating two file
+
+-rw-r--r-- 1 jbasone 1049089 677 Apr 14 20:17 Day-01-Task.java
+-rw-r--r-- 1 jbasone 1049089 677 Apr 14 20:17 Day-02-Task.java
+
+//Setup of the Git 
+$ git init
+
+//Add both the file
+$ git add Day-01-Task.java
+
+//Commit both the command
+
+$ git commit -m "First day task completed"
+
+
+$ git add Day-02-Task.java
+$ git commit -m "Second day task completed"
+
+//Check the file are commited
+$ git log
+commit 3f58bc54eac868e76dd97c7209b92f7d94dbd6fa (HEAD -> master)
+Author: Jayant-git-debug <jayantbasone100@yahoo.com>
+Date:   Mon Apr 14 20:23:23 2025 +0530
+
+    Second day task completed
+
+commit c8a66b6e8c359b5ff08237a00639810f991c574a
+Author: Jayant-git-debug <jayantbasone100@yahoo.com>
+Date:   Mon Apr 14 20:21:37 2025 +0530
+
+    First day task completed
+
+//Check any reposrity are added or not 
+$ git remote -v
+
+// Add reposritry
+$ git remote add origin https://github.com/Jayant-git-debug/Git_JB.git
+$ git remote -v
+origin  https://github.com/Jayant-git-debug/Git_JB.git (fetch)
+origin  https://github.com/Jayant-git-debug/Git_JB.git (push)
+
+//Now Push the Commited file to git resporitry
+$ git push -u origin main
+
+
+
