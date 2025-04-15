@@ -43,5 +43,94 @@ origin  https://github.com/Jayant-git-debug/Git_JB.git (push)
 //Now Push the Commited file to git resporitry
 $ git push -u origin main
 
+//Branch :  How to create the barnch and how checkout the branch
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ ls
+Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ ls
+Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
+
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ ls
+Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
+$ ls
+Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
+Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ git branch
+* main
+
+* main
+
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ git branch feature
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ git branch
+  feature
+* main
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Test_python.py
+
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git add .
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git commit -m "This is my python Program"
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git log --oneline
+1689c3c (HEAD -> feature) This is my python Program
+d78bdce (origin/main, main) This is for Documention
+3f58bc5 Second day task completed
+c8a66b6 First day task completed
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git remote -v
+origin  https://github.com/Jayant-git-debug/Git_JB.git (fetch)
+origin  https://github.com/Jayant-git-debug/Git_JB.git (push) 
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
+$ git push -u origin feature
+Enumerating objects: 4, done.      
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 342 bytes | 171.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Jayant-git-debug/Git_JB/pull/new/feature
+remote:
+To https://github.com/Jayant-git-debug/Git_JB.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+
+
+
+
+
+
 
 
