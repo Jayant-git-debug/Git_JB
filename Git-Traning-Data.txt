@@ -136,6 +136,16 @@ Goto -> Pull request->select from which branch to main branch movement->crate th
 
 //The peron who you assign he got notification or mail for the approval
 
+//Shortcut for the git branch :to create the branch as well checkout
+
+jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
+$ git checkout -b rise
+Switched to a new branch 'rise'
+
+$ git branch
+  main
+* rise
+
 
 
 
