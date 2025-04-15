@@ -126,6 +126,18 @@ To https://github.com/Jayant-git-debug/Git_JB.git
  * [new branch]      feature -> feature
 branch 'feature' set up to track 'origin/feature'.
 
+//How to pull or passing the file one branch to another
+
+Goto -> Pull request->select from which branch to main branch movement->crate the pull request -> review the code
+
+//If you want to reivew the changes to some one 
+
+Goto -> Pull request->select from which branch to main branch movement->crate the pull request -> review the code -> Assign -> search the name->provide the description->create
+
+//The peron who you assign he got notification or mail for the approval
+
+
+
 
 
 
