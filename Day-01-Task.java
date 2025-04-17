@@ -1,3 +1,5 @@
+
+Galat hai
 public class Addition {
 	    public static void main(String[] args) {
 		            // Declare and initialize two numbers
