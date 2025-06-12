@@ -213,7 +213,20 @@ This will merge the specified branch with our master branch.
 //
 
 
+##🔹 3. Git Flow or Branch Naming Convention: "blue"
+Sometimes teams use color-coded naming for environments or branches:
 
+Branch	Purpose
+blue	Staging or UAT env
+green	Production or live env
+
+In blue-green deployment, for example, you have two environments:
+
+blue = old/live version
+
+green = new/candidate version
+
+This allows zero-downtime deployments.
 
 
 
