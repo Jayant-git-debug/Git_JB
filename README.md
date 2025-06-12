@@ -1,16 +1,17 @@
-**What is Git :-**
+# Git
+## What is Git :-
 • Git is a version control system.
 • Git helps you keep track of code changes.
 • Git is used to collaborate on code.
 • Git and GitHub are different things.
 
-**What is GitHub :-**
+## What is GitHub :-
 Git is not the same as GitHub.
 • GitHub makes tools that use Git.
 • GitHub is the largest host of source code in the world, and has
 been owned by Microsoft since 2018.
 
-**Git Branching :-**
+## Git Branching :-
 In Git, a branch is a new/separate version of the main repository.
 Branches allow you to work on different parts of a project without
 impacting the main branch. When the work is complete, a branch can be
@@ -18,7 +19,7 @@ merged with the main project.
 We can even switch between branches and work on different
 projects without them interfering with each other.
 
-**Git Reset** :-
+## Git Reset :-
 ‘reset’ is the command we use when we want to move the repository
 back to a previous commit, discarding any changes made after that commit.
 First, get the seven characters of the commit hash from the log for the
@@ -26,7 +27,7 @@ commit that you want to go back for. Then we reset our repository back to
 that specific commit using ‘git reset commithash’ (commithash being the first
 7 characters of the commit hash we found in the log)
 
-$ git reset <commithash>
+**$ git reset <commithash>**
 
 
 /**/Creating two file**
@@ -35,18 +36,18 @@ $ git reset <commithash>
 -rw-r--r-- 1 jbasone 1049089 677 Apr 14 20:17 Day-02-Task.java
 
 //Setup of the Git 
-$ git init
+**$ git init**
 
 //Add both the file
-$ git add Day-01-Task.java
+**$ git add Day-01-Task.java**
 
 //Commit both the command
 
-$ git commit -m "First day task completed"
+**$ git commit -m "First day task completed"**
 
 
-$ git add Day-02-Task.java
-$ git commit -m "Second day task completed"
+**$ git add Day-02-Task.java**
+**$ git commit -m "Second day task completed"**
 
 //Check the file are commited
 $ git log
@@ -62,19 +63,20 @@ Date:   Mon Apr 14 20:21:37 2025 +0530
 
     First day task completed
 
-//Check any reposrity are added or not 
-$ git remote -v
+ ## //Check any reposrity are added or not 
+**$ git remote -v**
 
-// Add reposritry
+## // Add reposritry
 $ git remote add origin https://github.com/Jayant-git-debug/Git_JB.git
 $ git remote -v
 origin  https://github.com/Jayant-git-debug/Git_JB.git (fetch)
 origin  https://github.com/Jayant-git-debug/Git_JB.git (push)
 
-//Now Push the Commited file to git resporitry
-$ git push -u origin main
+## //Now Push the Commited file to git resporitry
+** $ git push -u origin main**
 
-//Branch :  How to create the barnch and how checkout the branch
+## //Branch :  How to create the barnch and how checkout the branch
+
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
 $ ls
 Day-01-Task.java  Day-02-Task.java  Git-Traning-Data.txt
@@ -100,22 +102,22 @@ $ git branch
 
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
-$ git branch feature
+**$ git branch feature**
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
-$ git branch
+**$ git branch
   feature
-* main
+* main**
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
-$ git checkout feature
+**$ git checkout feature**
 Switched to branch 'feature'
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
 $
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
-$ git status
+**$ git status**
 On branch feature
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
@@ -123,7 +125,7 @@ Changes to be committed:
 
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
-$ git add .
+**$ git add .**
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
 $ git commit -m "This is my python Program"
@@ -136,12 +138,12 @@ d78bdce (origin/main, main) This is for Documention
 c8a66b6 First day task completed
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
-$ git remote -v
+**$ git remote -v**
 origin  https://github.com/Jayant-git-debug/Git_JB.git (fetch)
 origin  https://github.com/Jayant-git-debug/Git_JB.git (push) 
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (feature)
-$ git push -u origin feature
+**$ git push -u origin feature**
 Enumerating objects: 4, done.      
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
@@ -157,17 +159,17 @@ To https://github.com/Jayant-git-debug/Git_JB.git
  * [new branch]      feature -> feature
 branch 'feature' set up to track 'origin/feature'.
 
-//How to pull or passing the file one branch to another
+## //How to pull or passing the file one branch to another
 
 Goto -> Pull request->select from which branch to main branch movement->crate the pull request -> review the code
 
-//If you want to reivew the changes to some one 
+## //If you want to reivew the changes to some one 
 
 Goto -> Pull request->select from which branch to main branch movement->crate the pull request -> review the code -> Assign -> search the name->provide the description->create
 
-//The peron who you assign he got notification or mail for the approval
+## //The peron who you assign he got notification or mail for the approval
 
-//Shortcut for the git branch :to create the branch as well checkout
+## //Shortcut for the git branch :to create the branch as well checkout
 
 jbasone@jbasone-lap MINGW64 ~/Documents/DEVOPS/Radical/Git (main)
 $ git checkout -b rise
@@ -177,7 +179,7 @@ $ git branch
   main
 * rise
 
-//How to fetch details by using of the pull command
+## //How to fetch details by using of the pull command
 
 jbasone@jbasone-lap MINGW64 /e/Folder/16_04_25
 $ git init
@@ -200,7 +202,7 @@ From https://github.com/Jayant-git-debug/Git_JB
  * branch            main       -> FETCH_HEAD
  * [new branch]      main       -> origin/main
 
-//Merg command use
+## //Merg command use
 
 It’s preferred to change/switch to master branch before any branch
 needs to be merged with it.
