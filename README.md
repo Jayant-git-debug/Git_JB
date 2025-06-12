@@ -1,16 +1,16 @@
-What is Git :-
+**What is Git :-**
 • Git is a version control system.
 • Git helps you keep track of code changes.
 • Git is used to collaborate on code.
 • Git and GitHub are different things.
 
-What is GitHub :-
+**What is GitHub :-**
 Git is not the same as GitHub.
 • GitHub makes tools that use Git.
 • GitHub is the largest host of source code in the world, and has
 been owned by Microsoft since 2018.
 
-Git Branching :-
+**Git Branching :-**
 In Git, a branch is a new/separate version of the main repository.
 Branches allow you to work on different parts of a project without
 impacting the main branch. When the work is complete, a branch can be
@@ -18,7 +18,7 @@ merged with the main project.
 We can even switch between branches and work on different
 projects without them interfering with each other.
 
-Git Reset :-
+**Git Reset** :-
 ‘reset’ is the command we use when we want to move the repository
 back to a previous commit, discarding any changes made after that commit.
 First, get the seven characters of the commit hash from the log for the
@@ -29,8 +29,7 @@ that specific commit using ‘git reset commithash’ (commithash being the firs
 $ git reset <commithash>
 
 
-
-//Creating two file
+/**/Creating two file**
 
 -rw-r--r-- 1 jbasone 1049089 677 Apr 14 20:17 Day-01-Task.java
 -rw-r--r-- 1 jbasone 1049089 677 Apr 14 20:17 Day-02-Task.java
