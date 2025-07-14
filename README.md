@@ -15,6 +15,11 @@ This repository serves as a learning and reference guide for using Git and GitHu
 - It allows developers to **host**, **manage**, and **review** code.
 - GitHub is the **largest host of source code** and is owned by **Microsoft (since 2018)**.
 
+## 📌 What is the difference between `git fetch` and `git pull`?
+
+- `git fetch`: Downloads changes from the remote repository without merging them.
+- `git pull`: Fetches and merges changes from the remote repository into your current branch.
+
 ## 🔀 Git Branching
 
 - Branching creates an **isolated version** of the project for development.
