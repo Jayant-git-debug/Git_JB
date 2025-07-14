@@ -1,0 +1,72 @@
+
+Git Interview Questions and Answers
+===================================
+
+🔹 BASIC GIT QUESTIONS
+
+1. What is Git?
+Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to collaborate, manage changes, and maintain the history of code revisions.
+
+2. What is the difference between Git and GitHub?
+- Git is a version control tool used locally to manage code.
+- GitHub is a cloud-based platform that hosts Git repositories and provides collaboration features like pull requests and issue tracking.
+
+3. What is a Git repository?
+A Git repository is a .git folder inside a project directory that stores all version history, branches, and configuration for the project.
+
+4. What’s the difference between a local and a remote repository?
+- Local repository is on your computer (your working directory and .git folder).
+- Remote repository is hosted on a server (e.g., GitHub, GitLab).
+
+5. How do you check the current Git branch?
+git branch
+
+
+🔹 INTERMEDIATE GIT QUESTIONS
+
+6. What is the difference between `git fetch` and `git pull`?
+- `git fetch`: Downloads changes from the remote repository without merging them.
+- `git pull`: Fetches and merges changes from the remote repository into your current branch.
+
+7. How do you resolve a Git merge conflict?
+1. Open the conflicting file.
+2. Edit the sections marked by Git (<<<<<<<, =======, >>>>>>>).
+3. Save the changes.
+4. Add the file: git add <filename>
+5. Commit the merge: git commit
+
+8. What is a Git branch? Why is it used?
+A Git branch allows you to develop features, fix bugs, or experiment without affecting the main codebase. It's used for isolating development work.
+
+9. What is the difference between `git merge` and `git rebase`?
+- `git merge`: Combines changes into a single commit with a possible merge commit.
+- `git rebase`: Re-applies commits from one branch onto another, creating a linear history.
+
+10. How do you undo a commit that has been pushed to the remote repo?
+Use `git revert <commit-hash>` to create a new commit that undoes the previous one.
+(This is preferred over `git reset` for shared/public repositories.)
+
+
+🔹 ADVANCED GIT QUESTIONS
+
+11. How do you squash commits in Git?
+git rebase -i HEAD~n
+- Replace `pick` with `squash` for commits you want to merge.
+- Save and edit the commit message.
+
+12. What is the `.gitignore` file?
+It lists files and directories Git should ignore (not track), like log files, temp files, or compiled binaries.
+
+13. How can you view commit history?
+git log
+For more details: git log --oneline --graph --decorate --all
+
+14. What are Git tags?
+Tags are used to mark specific points in history, typically for releases (e.g., v1.0).
+git tag v1.0  
+git push origin v1.0
+
+15. What is the stash in Git?
+`git stash` temporarily saves your changes without committing, allowing you to switch branches.
+git stash  
+git stash pop
