@@ -110,6 +110,12 @@ $ git branch
 feature
 * main
 ```
+## How to change git to push remote master branch to main branch on github
+```bash
+git push -u origin master:main
+```
+
+
 ## 🎨 Git Branch Naming Convention (Blue-Green Deployment)
 Used in deployment strategies for staging and production environments.
 
